@@ -48,7 +48,7 @@ except Exception as error:
 
 
 def get_answer_sources(answer, selected_sources):
-    # if not answer or answer.lower().strip() == UNAVAILABLE_MESSAGE.lower():
+    
     if not answer or UNAVAILABLE_MESSAGE.lower() in answer.lower():
         return []
 
