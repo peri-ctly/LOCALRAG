@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Local RAG Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="header">
+
+                <h1> Local RAG Assistant </h1>
+
+                <p class="subtitle"> Ask questions about your PDF documents. </p>
+
+            </div>
+
+            <div class="chat" id="chat" >
+
+                <div class="message ai">
+
+                    <div class="bubble"> 👋 Hello! Ask me anything about your PDF documents. </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask something..."
+                >
+
+                <button id="askButton" type="button"> ➤ </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-panel">
+
+            <div class="pdf-upload">
+
+                <label
+                    for="pdfInput"
+                    class="pdf-button"
+                    id="pdf-button"
+                >
+                    ＋ Add PDF
+                </label>
+
+                <input
+                    type="file"
+                    id="pdfInput"
+                    accept=".pdf,application/pdf"
+                >
+
+            </div>
+
+            <p class="pdf-hint">20MB per file · PDF</p>
+
+
+            <div id="documentsContainer" class="documents-container">
+
+                <div class="documents-title"> Uploaded Documents </div>
+
+                <div id="documentsList" class="documents-list" > </div>
+
+                <div id="pdfLoading" class="pdf-loading">
+                    ⟳ Processing PDF...
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

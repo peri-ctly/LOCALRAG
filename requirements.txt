@@ -1,0 +1,5 @@
+foundry-local-sdk-winml==1.2.4
+Flask
+Werkzeug
+pypdf
+
