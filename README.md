@@ -25,13 +25,13 @@ A local Retrieval-Augmented Generation (RAG) application built with Python, Flas
 
 
 ## Installation
-
+```
 git clone https://github.com/peri-ctly/LOCALRAG.git
 cd local-rag-assistant
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 
 ## Run
 
