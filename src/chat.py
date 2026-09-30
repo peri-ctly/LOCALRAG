@@ -78,8 +78,6 @@ def generate_answer(question, context):
     """
     Generates an answer using only the retrieved context.
 
-    context_embeddings is kept in the signature only for
-    compatibility with app.py; it is not used anymore.
     """
 
     question = question.strip()
